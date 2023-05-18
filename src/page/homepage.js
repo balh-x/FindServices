@@ -40,7 +40,7 @@ const Homepage = () => {
     },
   ];
 
-  const { getHeight, on } = DOMHelper;
+  const { getHeight} = DOMHelper;
   return (
       <Layout>
         <Content style={{ padding: '80px' ,backgroundColor:'#F5F5F5',height:getHeight(window)}}>
