@@ -3,7 +3,6 @@ import { Form, Button, Panel, InputGroup, Stack, Checkbox, Divider } from 'rsuit
 import EyeIcon from '@rsuite/icons/legacy/Eye';
 import EyeSlashIcon from '@rsuite/icons/legacy/EyeSlash';
 import 'rsuite/dist/rsuite.min.css';
-import {Link} from 'react-router-dom';
 import Brand from '../component/Brand';
 import { useNavigate } from 'react-router-dom';
 
