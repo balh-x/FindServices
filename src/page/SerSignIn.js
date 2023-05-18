@@ -1,7 +1,7 @@
 // import React from 'react';
 import React, { Component, useContext } from 'react';
 import { Form, Button, Panel, IconButton, Stack, Divider, Model ,Schema,toaster,Message } from 'rsuite';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import GithubIcon from '@rsuite/icons/legacy/Github';
 import FacebookIcon from '@rsuite/icons/legacy/Facebook';
 import GoogleIcon from '@rsuite/icons/legacy/Google';
@@ -97,7 +97,7 @@ const SerSignIn = () => {
         <Panel bordered style={{ background: '#fff', width: 400 }} header={<h3>Service Sign In</h3>}>
           <p style={{ marginBottom: 10 }}>
             <span className="text-muted">New Here? </span>{' '}
-            <Link to="/SerSignUp"> Create an Account</Link>
+            <a href="/SerSignUp"> Create an Account</a>
           </p>
 
           <Form fluid model={model} ref={formRef}>
