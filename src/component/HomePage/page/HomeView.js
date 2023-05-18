@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import HomePageAbout from './About';
 import InitialHomePage from './Home';
 import Brand from '../../Brand';
+import { useNavigate } from 'react-router-dom';
 import './tokyo.css'
 import './dark.css'
 
@@ -18,6 +19,7 @@ const brandcss = {
 
 const HomeView = (props) => {
   const [tabIndex, setTabIndex] = useState(props.tabIndex);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -27,9 +29,9 @@ const HomeView = (props) => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <Link className="navbar-brand" to="/">
+                <a className="navbar-brand" to="/">
                 <Brand style={brandcss}></Brand>
-                </Link>
+                </a>
               </div>
 
               <div className="menu">
